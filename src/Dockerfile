@@ -4,11 +4,11 @@ EXPOSE 80
 EXPOSE 443
 
 FROM mcr.microsoft.com/dotnet/sdk:5.0-focal AS build
-WORKDIR /src
+WORKDIR /SuperService
 COPY ["src/SuperService.csproj", "src/"]
 RUN dotnet restore "src/SuperService.csproj"
 COPY . .
-WORKDIR "/src/src"
+WORKDIR "/SuperService/src"
 RUN dotnet build "SuperService.csproj" -c Release -o /app/build
 
 FROM build AS publish

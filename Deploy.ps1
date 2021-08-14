@@ -6,7 +6,7 @@ param (
     [ValidateNotNullOrEmpty()]
     [string]$CertStoreLocation = "cert:\LocalMachine\My",
 
-    # Secure string?
+    # TODO: Secure string?
     [ValidateNotNullOrEmpty()]
     [string]$CertPassword = "password",
 
@@ -17,7 +17,7 @@ param (
     [string]$CertExportPath = "c:\certs\cert.pfx"
 )
 
-# Needed?
+# TODO: Needed?
 Import-Module "$PSScriptRoot\Deploy-Module.psm1"
 
 RunTests
