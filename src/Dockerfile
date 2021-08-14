@@ -3,6 +3,7 @@ WORKDIR /app
 EXPOSE 80
 EXPOSE 443
 
+# Using the focal image to build due to the issues with SSL and nuget until microsoft updates their images
 FROM mcr.microsoft.com/dotnet/sdk:5.0-focal AS build
 WORKDIR /SuperService
 COPY ["src/SuperService.csproj", "src/"]

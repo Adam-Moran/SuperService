@@ -9,6 +9,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SuperService.UnitTests", "t
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Scripts", "Scripts", "{DF97DEFB-290F-4530-A209-10762CAA9772}"
 	ProjectSection(SolutionItems) = preProject
+		Deploy-Module.psm1 = Deploy-Module.psm1
 		Deploy.ps1 = Deploy.ps1
 	EndProjectSection
 EndProject

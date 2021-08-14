@@ -5,6 +5,9 @@
     <RootNamespace>SuperService</RootNamespace>
     <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
     <UserSecretsId>aad30714-ba8a-41de-866b-14034003a8f8</UserSecretsId>
+    <LangVersion>8.0</LangVersion>
+    <Nullable>enable</Nullable>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
   </PropertyGroup>
 
   <ItemGroup>
